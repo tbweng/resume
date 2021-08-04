@@ -1,0 +1,229 @@
+---
+title: "Timothy Weng's resume"
+author: Timothy Weng
+date: "`r Sys.Date()`"
+output:
+  pagedown::html_resume:
+    self_contained: true
+knit: pagedown::chrome_print
+---
+
+```{css, echo=FALSE}
+
+:root{
+  --page-width: 8.5in;
+  --margin-right: 0.30in;
+  --margin-left: 0.15in;
+  --content-width: calc(var(--page-width) - var(--margin-right) - var(--margin-left));
+  --root-font-size: 12pt;
+  --sidebar-width: 12rem;
+  --sidebar-background-color: #f2f2f2;
+  --main-width: calc(var(--content-width) - var(--sidebar-width));
+  --decorator-horizontal-margin: 0.15in;
+
+  --sidebar-horizontal-padding: 0.15in;
+
+  /* XXX: using px for very good precision control */
+  --decorator-outer-offset-top: 10px;
+  --decorator-outer-offset-left: -5.5px;
+  --decorator-border-width: 1px;
+  --decorator-outer-dim: 9px;
+  --decorator-border: 1px solid #ccc;
+
+  --row-blocks-padding-top: 0.5rem;
+  --date-block-width: 0.7in;
+
+  --main-blocks-title-icon-offset-left: calc(-17pt - 0.25 * var(--root-font-size));
+
+  --viewer-background-color: #dcdcdc;
+  --viewer-pages-spacing: 12px;
+  --viewer-shadow-color: #313131;
+}
+
+.aside{
+  width: var(--sidebar-width);
+  padding: .8in var(--sidebar-horizontal-padding);
+  font-size: 0.7rem;
+  float: right;
+  position: absolute;
+  right: 0;
+}
+
+.aside h2{
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+.aside .level2{
+  margin-top: 0.25in;
+}
+
+#contact ul{
+  margin-top: 0.05in;
+  padding-left: 0;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+/* main */
+
+/** big title **/
+h1, h2{
+  text-transform: uppercase;
+}
+
+#title{
+  position: relative;
+  left: 0.25in;
+  margin: auto 0.25in 0.25in auto;
+  line-height: 1.2;
+}
+
+#title h1{
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+
+.blocks:last-child .decorator{ /* slightly shortens it */
+  margin-bottom: 0in;
+}
+
+
+.pagedjs_page {
+    background: linear-gradient(to left,var(--sidebar-background-color),var(--sidebar-background-color) var(--sidebar-background-width),white var(--sidebar-background-width));
+    --pagedjs-margin-top: .5in;
+    --pagedjs-margin-right: 0.4in;
+    --pagedjs-margin-left: 0.15in;
+    --pagedjs-margin-bottom: .25in;
+    --pagedjs-pagebox-width: 8.5in;
+    --pagedjs-pagebox-height: 11in;
+  
+
+```
+
+Aside
+================================================================================
+
+Contact Info {#contact}
+--------------------------------------------------------------------------------
+
+- <i class="fa fa-envelope"></i> tbweng@gmail.com
+- <i class="fa fa-github"></i> [github.com/tbweng](https://github.com/tbweng)
+- <i class="fa fa-linkedin"></i> [linkedin.com/tbweng](https://linkedin.com/tbweng)
+
+<i class="fa fa-cogs" aria-hidden="true"></i> Skills {#skills}
+--------------------------------------------------------------------------------
+
+- Python (NumPy, Pandas, SciPy, SciKit-Learn, Matplotlib), 
+- R (Tidyverse),
+- Experimental Design (Randomized Control Trial), Hypothesis-driven testing (A/B testing)
+- Data Analysis, Advanced Statistics,
+- Regression Analysis (Linear, Logistic, Linear Mixed Effects),
+- SQL, Bash, Data Visualization, 
+- Jupyter Notebook, R Markdown,
+- Git/GitHub, LaTeX 
+
+
+<i class="fa fa-graduation-cap"></i> Education {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+### The University of Iowa
+
+Ph.D. in Psychology (Behavioral and Cognitive Neuroscience), 2018
+
+**Thesis:** "Brain network predictors of exercise behavior change in sedentary older adults: an emotion and decision-making perspective"
+
+### University of Illinois at Urbana-Champaign
+
+B.S. (Honors) in Psychology (Behavioral and Cognitive Neuroscience), 2011
+
+
+<i class="far fa-newspaper"></i> Publications {#publications}
+--------------------------------------------------------------------------------
+
+For a full list of my publications (15+ articles, 500+ citations), please see my [Google Scholar](https://scholar.google.com/citations?user=FLqI1VQAAAAJ) 
+
+
+
+Disclaimer {#disclaimer}
+--------------------------------------------------------------------------------
+
+Last updated on `r Sys.Date()`
+
+
+
+Main
+================================================================================
+
+Timothy Weng, PhD {#title}
+--------------------------------------------------------------------------------
+
+### Computational Neuroscientist
+
+As a PhD-trained computational neuroscientist with 9 years of data science experience with large-scale biomedical and behavioral research data, I have the unique combination of technical skills, critical thinking aptitude, and creative problem solving abilities to produce data-driven and actionable solutions to business challenges.
+
+Work Experience {data-icon=suitcase}
+--------------------------------------------------------------------------------
+
+### Postdoctoral Research Fellow
+
+[Computational Neuroimaging Laboratory](http://computational-neuroimaging-lab.org/), Dell Medical School, The University of Texas at Austin
+
+Austin, TX
+
+2018 - present
+
+- Build, maintain, and test Python-based pipelines for processing terrabytes of multi-modal neuroimaging data on high performance computing systems
+- Aggregate multiple data streams from image processing pipelines to automatically provide data quality metrics and descriptive statistics
+- Build and deploy statistical models and machine learning algorithms in R and Python to predict brain aging from longitudinal cardiovascular health data (N = 1,000+)
+- Write documentation on using [Python-based software C-PAC](https://github.com/FCP-INDI/C-PAC/) <i class="fa fa-github"></i> for different use cases
+- Identify and report software defects and work with [C-PAC](https://github.com/FCP-INDI/C-PAC/) software engineering team to reproduce them and test patches
+- Design research experiments and manage team to implement
+<!-- - Provide feedback on the [C-PAC](https://github.com/FCP-INDI/C-PAC/) dashboard user experience -->
+
+### Consultant
+
+[Center for Biomedical Image Computing and Analytics](https://www.med.upenn.edu/cbica/), Perelman School of Medicine, University of Pennsylvania
+
+Philadelphia, PA (remote)
+
+2020 - present
+
+- Develop infrastructure for automated and efficient data processing pipeline for functional MRI data using cutting edge techniques
+- Provide technical support for biomedical imaging acquisition protocols
+- Educate staff on biomedical data processing
+
+Project Experience {data-icon=laptop}
+--------------------------------------------------------------------------------
+
+### Graduate Researcher
+
+[Health, Brain, Cognition Laboratory](https://psychology.uiowa.edu/health-brain-cognition-lab), The University of Iowa 
+
+Iowa City, IA
+
+2012-2018
+
+
+- Developed [software package](https://github.com/HBClab/RestingState) <i class="fa fa-github"></i> to optimize and automate processing of functional MRI data, reducing computational time by ~150\% 
+- Enabled our team to explore data, build statistical models, and publish results more quickly than previous implementation (10+ papers published using this code) 
+- Completed 5 research projects that culminated in doctoral thesis using biomedical and behavioral data to predict exercise behavior change 
+- Implemented multivariate analyses in R, including linear mixed effects modeling, principal components analysis, and MANCOVA
+- Utilized high performance computing cluster to execute data processing and analyses in parallel
+
+### ANC Neighbors
+
+Austin New Church
+
+Austin, TX
+
+2020
+
+- [Geospatial analysis](https://tbweng.github.io/ANCNeighbors/map) of ~600 household addresses to connect church members across Austin metro in a data-driven fashion
+- Built Python-based application to load and extract from database and convert them to geospatial coordinates 
+- Applied k-means clustering to identify geospatial clusters and classify new datapoints 
+- Performed basic descriptive statistics and visualizations for geospatial clusters
+
+
+
