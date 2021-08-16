@@ -12,14 +12,14 @@ knit: pagedown::chrome_print
 
 :root{
   --page-width: 8.5in;
-  --margin-right: 0.30in;
+  --margin-right: 0.10in;
   --margin-left: 0.15in;
   --content-width: calc(var(--page-width) - var(--margin-right) - var(--margin-left));
   --root-font-size: 12pt;
   --sidebar-width: 12rem;
   --sidebar-background-color: #f2f2f2;
   --main-width: calc(var(--content-width) - var(--sidebar-width));
-  --decorator-horizontal-margin: 0.15in;
+  --decorator-horizontal-margin: 0.14in;
 
   --sidebar-horizontal-padding: 0.15in;
 
@@ -94,11 +94,20 @@ h1, h2{
     background: linear-gradient(to left,var(--sidebar-background-color),var(--sidebar-background-color) var(--sidebar-background-width),white var(--sidebar-background-width));
     --pagedjs-margin-top: .5in;
     --pagedjs-margin-right: 0.4in;
-    --pagedjs-margin-left: 0.15in;
+    --pagedjs-margin-left: 0.03in;
     --pagedjs-margin-bottom: .25in;
     --pagedjs-pagebox-width: 8.5in;
     --pagedjs-pagebox-height: 11in;
-  
+
+.date {
+    flex: 0 0 var(--date-block-width);
+    padding-top: calc(var(--row-blocks-padding-top) + 0.25rem)!important;
+    padding-right: 0.1in;
+    font-size: 0.7rem;
+    text-align: right;
+    line-height: 1;
+    max-width: var(--date-block-width);
+}
 
 ```
 
@@ -115,14 +124,17 @@ Contact Info {#contact}
 <i class="fa fa-cogs" aria-hidden="true"></i> Skills {#skills}
 --------------------------------------------------------------------------------
 
-- Python (NumPy, Pandas, SciPy, SciKit-Learn, Matplotlib), 
+- Python (Pandas, SciKit-Learn, SciPy, Matplotlib, NumPy), 
 - R (Tidyverse),
-- Experimental Design (Randomized Control Trial), Hypothesis-driven testing (A/B testing)
+- Containers (Docker, Singularity)
+- AWS, Git,
 - Data Analysis, Advanced Statistics,
+- Experimental Design (Randomized Control Trial), Hypothesis-driven testing (A/B testing),
 - Regression Analysis (Linear, Logistic, Linear Mixed Effects),
-- SQL, Bash, Data Visualization, 
-- Jupyter Notebook, R Markdown,
-- Git/GitHub, LaTeX 
+- Time series, Jupyter Notebook,
+- SQL, Bash, Data Visualization
+
+ 
 
 
 <i class="fa fa-graduation-cap"></i> Education {data-icon=graduation-cap data-concise=true}
@@ -149,7 +161,7 @@ For a full list of my publications (15+ articles, 500+ citations), please see my
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
 
-Last updated on `r Sys.Date()`
+Last updated on `r format(Sys.Date(), '%b %d %Y')`
 
 
 
@@ -161,7 +173,7 @@ Timothy Weng, PhD {#title}
 
 ### Computational Neuroscientist
 
-As a PhD-trained computational neuroscientist with 9 years of data science experience with large-scale biomedical and behavioral research data, I have the unique combination of technical skills, critical thinking aptitude, and creative problem solving abilities to produce data-driven and actionable solutions to business challenges.
+A PhD-trained computational neuroscientist with 9 years of data science experience on large-scale biomedical and behavioral research data. Unique combination of technical skills, critical thinking aptitude, and creative problem solving abilities to produce data-driven and actionable solutions to business challenges. Effective communicator who regularly translates technical analyses into written reports and presentations that are understandable to both technical and non-technical audiences.
 
 Work Experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
@@ -174,12 +186,13 @@ Austin, TX
 
 2018 - present
 
-- Build, maintain, and test Python-based pipelines for processing terrabytes of multi-modal neuroimaging data on high performance computing systems
-- Aggregate multiple data streams from image processing pipelines to automatically provide data quality metrics and descriptive statistics
-- Build and deploy statistical models and machine learning algorithms in R and Python to predict brain aging from longitudinal cardiovascular health data (N = 1,000+)
-- Write documentation on using [Python-based software C-PAC](https://github.com/FCP-INDI/C-PAC/) <i class="fa fa-github"></i> for different use cases
-- Identify and report software defects and work with [C-PAC](https://github.com/FCP-INDI/C-PAC/) software engineering team to reproduce them and test patches
-- Design research experiments and manage team to implement
+- Build, maintain, and test Python-based ETL pipelines for processing terrabytes of multi-modal neuroimaging data on high performance computing systems
+- Aggregate multiple data streams from image processing pipelines, using Lambda Architecture to automatically provide data quality metrics and descriptive statistics 
+- Deploy statistical models and machine learning algorithms in R and Python to predict brain aging from longitudinal cardiovascular health data (N = 1,000+)
+- Write documentation on using [Python-based software C-PAC](https://fcp-indi.github.io/docs/latest/user/) <i class="fa fa-github"></i> for different use cases
+- Identify software defects and collaborate closely with [C-PAC](https://github.com/FCP-INDI/C-PAC/) <i class="fa fa-github"></i> software engineering team to reproduce them and test patches
+- Design and manage collaborative projects with multiple academic disciplines and diverse team settings
+<!-- - Design research experiments and manage team of research assistants -->
 <!-- - Provide feedback on the [C-PAC](https://github.com/FCP-INDI/C-PAC/) dashboard user experience -->
 
 ### Consultant
@@ -190,7 +203,7 @@ Philadelphia, PA (remote)
 
 2020 - present
 
-- Develop infrastructure for automated and efficient data processing pipeline for functional MRI data using cutting edge techniques
+- Develop infrastructure for automated and efficient data processing pipeline for functional MRI data using cutting edge image processing techniques
 - Provide technical support for biomedical imaging acquisition protocols
 - Educate staff on biomedical data processing
 
@@ -206,11 +219,12 @@ Iowa City, IA
 2012-2018
 
 
-- Developed [software package](https://github.com/HBClab/RestingState) <i class="fa fa-github"></i> to optimize and automate processing of functional MRI data, reducing computational time by ~150\% 
-- Enabled our team to explore data, build statistical models, and publish results more quickly than previous implementation (10+ papers published using this code) 
+- Co-developed [software package](https://github.com/HBClab/RestingState) <i class="fa fa-github"></i> to optimize and automate processing of MRI data, reducing computational time by ~150\% 
+- Enabled team to explore data, build statistical models, and publish results more quickly than previous implementation (10+ papers published using this codebase) 
+- Utilized high performance computing cluster to parallelize pipeline execution 
 - Completed 5 research projects that culminated in doctoral thesis using biomedical and behavioral data to predict exercise behavior change 
 - Implemented multivariate analyses in R, including linear mixed effects modeling, principal components analysis, and MANCOVA
-- Utilized high performance computing cluster to execute data processing and analyses in parallel
+- Awarded first-place in departmental data competition for ability to visualize and present data clearly and succinctly 
 
 ### ANC Neighbors
 
@@ -220,8 +234,8 @@ Austin, TX
 
 2020
 
-- [Geospatial analysis](https://tbweng.github.io/ANCNeighbors/map) of ~600 household addresses to connect church members across Austin metro in a data-driven fashion
-- Built Python-based application to load and extract from database and convert them to geospatial coordinates 
+- [Data-driven geospatial analysis](https://tbweng.github.io/ANCNeighbors/map) to inform church leaders about connecting their ~460 church members across Austin metro
+- Built Python-based application to load and extract from database and transform them to geospatial coordinates 
 - Applied k-means clustering to identify geospatial clusters and classify new datapoints 
 - Performed basic descriptive statistics and visualizations for geospatial clusters
 
