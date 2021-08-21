@@ -126,14 +126,16 @@ Contact Info {#contact}
 
 - Python (Pandas, SciKit-Learn, SciPy, Matplotlib, NumPy), 
 - R (Tidyverse),
-- Containers (Docker, Singularity)
-- AWS, Git,
-- Data Analysis, Advanced Statistics,
-- Experimental Design (Randomized Control Trial), Hypothesis-driven testing (A/B testing),
+- Data Analysis, 
+- Advanced Statistics,
+- Hypothesis-driven Testing (A/B Testing),
+- Experimental Design (Randomized Control Trial), 
+- Machine Learning,
 - Regression Analysis (Linear, Logistic, Linear Mixed Effects),
-- Time series, Jupyter Notebook,
+- Containers (Docker, Singularity)
+- Jupyter Notebook, AWS, Git,
 - SQL, Bash, Data Visualization
-
+- Agile
  
 
 
@@ -161,7 +163,7 @@ For a full list of my publications (15+ articles, 500+ citations), please see my
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
 
-Last updated on `r format(Sys.Date(), '%b %d %Y')`
+Last updated `r format(Sys.Date(), '%B %Y')`
 
 
 
@@ -173,7 +175,7 @@ Timothy Weng, PhD {#title}
 
 ### Computational Neuroscientist
 
-A PhD-trained computational neuroscientist with 9 years of data science experience on large-scale biomedical and behavioral research data. Unique combination of technical skills, critical thinking aptitude, and creative problem solving abilities to produce data-driven and actionable solutions to business challenges. Effective communicator who regularly translates technical analyses into written reports and presentations that are understandable to both technical and non-technical audiences.
+PhD-trained computational neuroscientist with 9 years of data science experience on large-scale biomedical and behavioral research data, emphasis on human behavior \& decision-making. Unique combination of technical skills, critical thinking aptitude, and creative problem solving abilities to produce data-driven and actionable solutions. Effective communicator who regularly translates technical analyses into written reports and presentations that are understandable to both technical and non-technical audiences.
 
 Work Experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
@@ -187,7 +189,7 @@ Austin, TX
 2018 - present
 
 - Build, maintain, and test Python-based ETL pipelines for processing terrabytes of multi-modal neuroimaging data on high performance computing systems
-- Aggregate multiple data streams from image processing pipelines, using Lambda Architecture to automatically provide data quality metrics and descriptive statistics 
+- Aggregate multiple data streams from image processing pipelines and automate production of data quality metrics and descriptive statistics 
 - Deploy statistical models and machine learning algorithms in R and Python to predict brain aging from longitudinal cardiovascular health data (N = 1,000+)
 - Write documentation on using [Python-based software C-PAC](https://fcp-indi.github.io/docs/latest/user/) <i class="fa fa-github"></i> for different use cases
 - Identify software defects and collaborate closely with [C-PAC](https://github.com/FCP-INDI/C-PAC/) <i class="fa fa-github"></i> software engineering team to reproduce them and test patches
@@ -203,9 +205,8 @@ Philadelphia, PA (remote)
 
 2020 - present
 
-- Develop infrastructure for automated and efficient data processing pipeline for functional MRI data using cutting edge image processing techniques
-- Provide technical support for biomedical imaging acquisition protocols
-- Educate staff on biomedical data processing
+- Develop infrastructure for automated and efficient data processing pipeline for functional MRI data using state-of-the-art image processing techniques
+- Provide technical support and education for biomedical imaging acquisition protocols and data processing methodologies
 
 Project Experience {data-icon=laptop}
 --------------------------------------------------------------------------------
@@ -222,7 +223,7 @@ Iowa City, IA
 - Co-developed [software package](https://github.com/HBClab/RestingState) <i class="fa fa-github"></i> to optimize and automate processing of MRI data, reducing computational time by ~150\% 
 - Enabled team to explore data, build statistical models, and publish results more quickly than previous implementation (10+ papers published using this codebase) 
 - Utilized high performance computing cluster to parallelize pipeline execution 
-- Completed 5 research projects that culminated in doctoral thesis using biomedical and behavioral data to predict exercise behavior change 
+- Completed 5 research projects that culminated in doctoral thesis using high-dimensional biomedical and behavioral data to predict human behavior change 
 - Implemented multivariate analyses in R, including linear mixed effects modeling, principal components analysis, and MANCOVA
 - Awarded first-place in departmental data competition for ability to visualize and present data clearly and succinctly 
 
